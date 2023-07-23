@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "24/7",
+    title: "24-7 Pharmacy",
     htmlAttrs: {
       lang: "en",
     },

@@ -1,0 +1,29 @@
+{
+  "Thefooter": {
+    "description": "Auto imported from components/Thefooter.vue"
+  },
+  "AdminNav": {
+    "description": "Auto imported from components/adminNav.vue"
+  },
+  "CheckoutItem": {
+    "description": "Auto imported from components/checkoutItem.vue"
+  },
+  "Headerbtn": {
+    "description": "Auto imported from components/headerbtn.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/navbar.vue"
+  },
+  "Testimonials": {
+    "description": "Auto imported from components/testimonials.vue"
+  },
+  "TheProduct": {
+    "description": "Auto imported from components/theProduct.vue"
+  },
+  "TopHeader": {
+    "description": "Auto imported from components/top-header.vue"
+  },
+  "TopSvg": {
+    "description": "Auto imported from components/top-svg.vue"
+  }
+}

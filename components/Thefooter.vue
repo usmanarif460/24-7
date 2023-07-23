@@ -103,7 +103,7 @@
       <!-- Copyright section -->
       <div class="p-2 text-center text-white bg-blue-500">
         © 2023 Copyright <strong> | </strong>
-        <a class=" hover:underline" href="/"> Wahab Online Pharmacy</a>
+        <a class=" hover:underline" href="/"> 24-7 Pharmacy</a>
       </div>
     </footer>
   </div>
