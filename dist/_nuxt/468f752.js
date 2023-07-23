@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{296:function(t,e,n){"use strict";n.r(e);var o={},l=n(48),component=Object(l.a)(o,(function(){return(0,this._self._c)("button",{staticClass:"border-2 border-white text-white font-bold hover:scale-105 rounded py-1.5 px-2 btn"},[this._t("default")],2)}),[],!1,null,null,null);e.default=component.exports}}]);
