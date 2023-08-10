@@ -15,7 +15,7 @@
             <p class="res-iconItem-heading">Trusted Labs </p>
 
 
-            <p class="res-iconItem-desc">Every test booked via Wahab Pharmacy is conducted by <a
+            <p class="res-iconItem-desc">Every test booked via 24/7 Pharmacy is conducted by <a
                 href="https://www.hashmanis.com.pk/"
                 style="text-decoration:none;color:#8897a2;font-weight:400"><u>Hashmanis</u> </a>Labs that are 100%
               verified and trustworthy.</p>
@@ -30,7 +30,7 @@
             <p class="res-iconItem-heading">Home Visit </p>
 
 
-            <p class="res-iconItem-desc">With Wahab Pharmacy, you get professional phlebotomists to pick-up the sample from
+            <p class="res-iconItem-desc">With 24/7 Pharmacy, you get professional phlebotomists to pick-up the sample from
               your home or preferred location.</p>
 
           </div>
@@ -56,7 +56,7 @@
             <p class="res-iconItem-heading">Up to 30% OFF </p>
 
 
-            <p class="res-iconItem-desc">At Wahab Pharmacy, you save at every step! On diagnostic tests, get up to 30% off!
+            <p class="res-iconItem-desc">At 24/7 Pharmacy, you save at every step! On diagnostic tests, get up to 30% off!
             </p>
 
           </div>
