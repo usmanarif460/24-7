@@ -2,113 +2,113 @@
   {
     "name": "aboutus",
     "path": "/aboutus",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/aboutus.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/aboutus.vue",
     "chunkName": "pages/aboutus",
-    "_name": "_7d7d9cb8"
+    "_name": "_e3ebd7b6"
   },
   {
     "name": "admin",
     "path": "/admin",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/admin/index.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/index.vue",
     "chunkName": "pages/admin/index",
-    "_name": "_98b67442"
+    "_name": "_311dbecc"
   },
   {
     "name": "checkout",
     "path": "/checkout",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/checkout.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/checkout.vue",
     "chunkName": "pages/checkout",
-    "_name": "_2bcaa26e"
+    "_name": "_29c5b608"
   },
   {
     "name": "compounded",
     "path": "/compounded",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/compounded.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/compounded.vue",
     "chunkName": "pages/compounded",
-    "_name": "_ba4a2f66"
+    "_name": "_6d189dc0"
   },
   {
     "name": "consultation",
     "path": "/consultation",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/consultation.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/consultation.vue",
     "chunkName": "pages/consultation",
-    "_name": "_fd8225e8"
+    "_name": "_9a35dc82"
   },
   {
     "name": "contactus",
     "path": "/contactus",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/contactus.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/contactus.vue",
     "chunkName": "pages/contactus",
-    "_name": "_2b4149cb"
+    "_name": "_4a8d99f8"
   },
   {
     "name": "lab-tests",
     "path": "/lab-tests",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/lab-tests.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/lab-tests.vue",
     "chunkName": "pages/lab-tests",
-    "_name": "_014a3b6e"
+    "_name": "_20968b9b"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/login.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/login.vue",
     "chunkName": "pages/login",
-    "_name": "_119a4376"
+    "_name": "_10709bba"
   },
   {
     "name": "medicines",
     "path": "/medicines",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/medicines.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/medicines.vue",
     "chunkName": "pages/medicines",
-    "_name": "_1e753b06"
+    "_name": "_3dc18b33"
   },
   {
     "name": "signup",
     "path": "/signup",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/signup.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/signup.vue",
     "chunkName": "pages/signup",
-    "_name": "_6e08185b"
+    "_name": "_4d887f4e"
   },
   {
     "name": "admin-addproduct",
     "path": "/admin/addproduct",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/admin/addproduct.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/addproduct.vue",
     "chunkName": "pages/admin/addproduct",
-    "_name": "_40c03671"
+    "_name": "_348ec9a4"
   },
   {
     "name": "admin-chat",
     "path": "/admin/chat",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/admin/chat.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/chat.vue",
     "chunkName": "pages/admin/chat",
-    "_name": "_653773db"
+    "_name": "_2f75294e"
   },
   {
     "name": "admin-productlist",
     "path": "/admin/productlist",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/admin/productlist.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/productlist.vue",
     "chunkName": "pages/admin/productlist",
-    "_name": "_fed86c4c"
+    "_name": "_06979d07"
   },
   {
     "name": "admin-userslist",
     "path": "/admin/userslist",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/admin/userslist.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/userslist.vue",
     "chunkName": "pages/admin/userslist",
-    "_name": "_083ecb33"
+    "_name": "_84f0f4c0"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/index.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_47f2a05f"
+    "_name": "_2e200f0c"
   },
   {
     "name": "products-id",
     "path": "/products/:id?",
-    "component": "/Users/faizanarif/Documents/usman-arif/Fyp/24-7/pages/products/_id.vue",
+    "component": "/home/adnan/Documents/projects/24-7/pages/products/_id.vue",
     "chunkName": "pages/products/_id",
-    "_name": "_00b5f612"
+    "_name": "_325c1ac5"
   }
 ]

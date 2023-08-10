@@ -2,17 +2,17 @@
 <template>
   <!-- Main navigation container -->
   <div>
-    <nav class="fixed z-40 w-full h-16 px-5 py-3 nav-bg">
-      <div class="w-11/12 mx-auto">
+    <nav class="fixed z-40 w-full  px-5 py-3 nav-bg">
+      <div class="w-11/12 mx-auto ">
         <!-- navbar -->
-        <div class="flex justify-between w-full align-middle ">
+        <div class="flex justify-between w-full items-center ">
           <!-- Header logo -->
           <div>
-            <nuxt-link to="/"><img src="~/assets/images/logo.png" class="logo-img"></nuxt-link>
+            <nuxt-link to="/"><img src="~/assets/images/logo-1.png" class="logo-img  w-16 h-16"></nuxt-link>
           </div>
           <!-- Navbar -->
           <div class="hidden md:block">
-            <ul class="flex justify-center pt-2 space-x-8 text-white uppercase align-center text-md">
+            <ul class="flex justify-center space-x-8 text-white uppercase items-center text-md">
               <li><nuxt-link to="/" class="inline-block hover:scale-110">Home</nuxt-link></li>
               <li><nuxt-link to="/aboutUs" class="inline-block hover:scale-110">About </nuxt-link></li>
               <li><nuxt-link to="/medicines" class="inline-block hover:scale-110">Medicines</nuxt-link></li>
@@ -93,7 +93,7 @@
 
           <div class="flex justify-between px-3 py-2 align-middle nav-bg">
             <div>
-              <img src="~/assets/images/logo.png" class="logo-img">
+              <img src="~/assets/images/logo-1.png" class="logo-img">
             </div>
             <div class="close">
               <button @click="isOpen = false">
@@ -107,7 +107,7 @@
 
 
           <ul
-            class="container flex flex-col justify-center p-5 mx-auto font-bold uppercase divide-y text-md md:text-xl align-center">
+            class="container flex flex-col justify-center p-5 mx-auto font-bold uppercase divide-y text-md md:text-xl items-center">
             <li><nuxt-link to="/" @click="isOpen = false" class="block my-4 text-center hover:scale-110 ">Home</nuxt-link>
             </li>
             <li><nuxt-link to="/aboutus" @click="isOpen = false"
@@ -133,7 +133,7 @@
 
           <div class="follow ">
             <p class="text-xl italic font-bold text-center sm:text-md">follow us:</p>
-            <div class="flex justify-center gap-16 mt-6 align-center ">
+            <div class="flex justify-center gap-16 mt-6 items-center ">
               <div>
                 <a href="#!">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-full mx-auto hover:scale-110 " fill="currentColor"
@@ -295,11 +295,6 @@ export default {
 </script>
 
 <style scoped>
-.logo-img {
-  width: 8rem;
-  height: 2.5rem;
-}
-
 .nav-bg {
   background-image: linear-gradient(to right, hsl(217, 88%, 33.7%), hsl(217, 88%, 75.1%));
 }
