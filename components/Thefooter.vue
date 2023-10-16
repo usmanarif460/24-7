@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed bottom-0 z-50 w-full bg-white border-t-4 border-blue-500 rounded-xl">
+  <div class="z-50 w-full bg-white border-t-4 border-blue-500  rounded-xl">
     <!-- Footer section with social media icons and newsletter sign-up -->
     <footer class="w-11/12 mx-auto text-center text-gray-800">
       <div class="pt-2">
