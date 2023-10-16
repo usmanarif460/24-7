@@ -5,7 +5,8 @@
       <h1 class="animate-pulse flex items-center justify-center font-bold text-blue-600 text-3xl lg:text-5xl mb-3">
         Checkout
       </h1>
-      <nuxt-link to="/medicines" class="underline text-blue-700 text-xl text-center">&lArr; Back to shop</nuxt-link>
+      <nuxt-link to="/medicines" class="underline text-blue-700 text-xl text-center mr-4">&lArr; Back to Shop</nuxt-link>
+      <nuxt-link to="/" class="underline text-blue-700 text-xl text-center">&lArr; Back to Home</nuxt-link>
     </div>
     <div class="lg:container p-12 mx-auto">
       <div class="flex flex-col w-full px-0 mx-auto md:flex-row">
@@ -44,7 +45,7 @@
                     class="w-full px-4 py-3 text-sm border border-gray-300 rounded lg:text-sm focus:outline-none focus:ring-1 focus:ring-blue-600"
                     v-model="phone">
                 </div>
-              </div>
+                                </div>
               <div class="mt-4">
                 <div class="w-full">
                   <label for="Address" class="block mb-3 text-sm font-semibold text-gray-500">Address</label>
@@ -53,8 +54,6 @@
                     name="Address" cols="20" rows="4" placeholder="Address" v-model="address"></textarea>
                 </div>
               </div>
-
-
               <div class="relative pt-3 xl:pt-6">
                 <label for="note" class="block mb-3 text-sm font-semibold text-gray-500">
                   Notes
@@ -101,7 +100,7 @@
                     <img class="overflow:hidden" :src="product.imageUrl">
                   </div>
                   <div>
-                    <h2 class="text-md font-bold mb-3">{{ product.name }}</h2>
+                    <h2 class="text-md font-bold mb-3">{{ product.name || product.testName }}</h2>
                     <span class="text-black "> PKR {{ product.price }} .00</span>
                     <p class="text-black "> Quantity : {{ product.quantity }}</p>
                     <p class="text-black "> Total : {{ product.quantity * product.price }}</p>
@@ -152,6 +151,7 @@ export default {
     lastName: '',
     address: '',
     email: '',
+    cnic: '',
     phone: '',
     notes: '',
   }),
@@ -170,7 +170,6 @@ export default {
     removeFromCart(product) {
       this.$store.dispatch('cart/removeFromCart', product)
     },
-
     async uploadOrderDetails() {
       const userDetails = {
         FirstName: this.firstName,
@@ -178,23 +177,25 @@ export default {
         Email: this.email,
         Phone: this.phone,
         Address: this.address,
+        CNIC: this.cnic,
         Notes: this.notes,
       }
       const checkoutData = {
         UserData: userDetails,
         CartData: this.getCartItems,
-        OrderPrice: this.getTotal
+        OrderPrice: this.getTotal,
+        newOrder: true
       }
       await this.$fire.firestore.collection('orders').add(checkoutData)
         .then(() => {
           alert('Product ordered successfully!')
           this.firstName = '',
-          this.lastName = '',
-          this.email = '',
-          this.phone = '',
-          this.address = '',
-          this.notes = '',
-          this.$router.push('/medicines')
+            this.lastName = '',
+            this.email = '',
+            this.phone = '',
+            this.address = '',
+            this.notes = '',
+            this.$router.push('/medicines')
           this.$store.commit('cart/clearCart');
         })
         .catch(error => {

@@ -6,31 +6,30 @@
           Testimonials
         </h3>
         <p class="mb-6 pb-2 md:mb-12 md:pb-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
-          amet numquam iure provident voluptate esse quasi, veritatis totam
-          voluptas nostrum quisquam eum porro a pariatur veniam.
+          Reviews play a crucial role in shaping a pharmacy's reputation, improving its offerings, and fostering a
+          positive relationship between the pharmacy and its customers.
         </p>
       </div>
 
       <!-- Container for the Testimonials -->
       <div class=" container mx-auto grid gap-16 text-center px-6 md:px-12 xl-px-0 ">
         <!-- First Testimonial -->
-        <div class="mb-12 md:mb-0  flex flex-col justify-center gap-3 md:flex-row ">
-          <div class="w-[100%] flex justify-center md:justify-start ">
-            <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+        <div class="mb-12 md:mb-0  flex flex-col justify-center gap-3 lg:flex-row ">
+          <div class="w-[100%] flex justify-center lg:justify-start ">
+            <img src="../assets/images/Reviewuser1.jpg"
               class=" sm:w-36 h-36 md:w-56 md:h-56 rounded-full p-1 shadow-xl" />
           </div>
           <div class="flex flex-col justify-center ">
             <h5 class="mb-4 text-xl font-semibold">Maria Smantha</h5>
-            
+
             <p class="mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2"
                 viewBox="0 0 24 24">
                 <path
                   d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
               </svg>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
-              id officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+              Shipping and delivery have consistently been prompt. I've never had to wait long for my orders to arrive,
+              and they always come securely packaged to ensure the products are in perfect condition.
             </p>
             <ul class="mb-0 flex items-center justify-center">
               <li>
@@ -73,25 +72,27 @@
                     clip-rule="evenodd" />
                 </svg>
               </li>
-              
+
             </ul>
           </div>
         </div>
 
         <!-- Second Testimonial -->
-        <div class="mb-12 md:mb-0  flex flex-col-reverse justify-center gap-3 md:flex-row">
-          
+        <div class="mb-12 md:mb-0  flex flex-col-reverse justify-center gap-3 lg:flex-row">
+
           <div class="flex flex-col justify-center">
             <h5 class="mb-4 text-xl font-semibold ">Maria Smantha</h5>
-            
+
             <p class="mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2"
                 viewBox="0 0 24 24">
                 <path
                   d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
               </svg>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
-              id officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+              The user-friendly website makes it incredibly easy to navigate and find the products I need. The search
+              feature is efficient, and the categories are well-organized, making my shopping experience hassle-free.
+              Moreover, the detailed product descriptions and clear images help me make informed decisions about my
+              purchases.
             </p>
             <ul class="mb-0 flex items-center justify-center">
               <li>
@@ -135,29 +136,30 @@
               </li>
             </ul>
           </div>
-          <div class="w-[100%] flex justify-center md:justify-end ">
-            <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+          <div class="w-[100%] flex justify-center lg:justify-end ">
+            <img src="../assets/images/Reviewuser2.jpg"
               class=" sm:w-36 h-36 md:w-56 md:h-56 rounded-full p-1 shadow-xl" />
           </div>
         </div>
 
         <!-- Third Testimonial -->
-        <div class="mb-12 md:mb-0  flex flex-col justify-center gap-3 md:flex-row">
-          <div class="w-[100%] flex justify-center md:justify-start ">
-            <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+        <div class="mb-12 md:mb-0  flex flex-col justify-center gap-3 lg:flex-row">
+          <div class="w-[100%] flex justify-center lg:justify-start ">
+            <img src="../assets/images/Reviewuser3.jpg"
               class=" sm:w-36 h-36 md:w-56 md:h-56 rounded-full p-1 shadow-xl" />
           </div>
           <div class="flex flex-col justify-center">
             <h5 class="mb-4 text-xl font-semibold">Maria Smantha</h5>
-           
+
             <p class="mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block h-7 w-7 pr-2"
                 viewBox="0 0 24 24">
                 <path
                   d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z" />
               </svg>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
-              id officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+              Customer service at Wahab Pharmacy deserves special mention. I once had a query about a product and their
+              support team was incredibly responsive and helpful. They provided me with all the information I needed and
+              even offered recommendations for alternatives when a particular item was out of stock.
             </p>
             <ul class="mb-0 flex items-center justify-center">
               <li>
@@ -200,11 +202,10 @@
                     clip-rule="evenodd" />
                 </svg>
               </li>
-              
+
             </ul>
-          </div>
         </div>
       </div>
     </div>
   </div>
-</template>
+</div></template>

@@ -10,7 +10,7 @@
       px-2
       btn
       
-      
+
     "
   >
     <slot></slot>

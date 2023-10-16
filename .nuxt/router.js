@@ -15,11 +15,16 @@ const _10709bba = () => interopDefault(import('../pages/login.vue' /* webpackChu
 const _3dc18b33 = () => interopDefault(import('../pages/medicines.vue' /* webpackChunkName: "pages/medicines" */))
 const _4d887f4e = () => interopDefault(import('../pages/signup.vue' /* webpackChunkName: "pages/signup" */))
 const _348ec9a4 = () => interopDefault(import('../pages/admin/addproduct.vue' /* webpackChunkName: "pages/admin/addproduct" */))
+const _657a9ca6 = () => interopDefault(import('../pages/admin/addtest.vue' /* webpackChunkName: "pages/admin/addtest" */))
 const _2f75294e = () => interopDefault(import('../pages/admin/chat.vue' /* webpackChunkName: "pages/admin/chat" */))
+const _1259ea4a = () => interopDefault(import('../pages/admin/orders.vue' /* webpackChunkName: "pages/admin/orders" */))
 const _06979d07 = () => interopDefault(import('../pages/admin/productlist.vue' /* webpackChunkName: "pages/admin/productlist" */))
+const _1bf3a49b = () => interopDefault(import('../pages/admin/tests.vue' /* webpackChunkName: "pages/admin/tests" */))
 const _84f0f4c0 = () => interopDefault(import('../pages/admin/userslist.vue' /* webpackChunkName: "pages/admin/userslist" */))
 const _2e200f0c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _29e699e4 = () => interopDefault(import('../pages/admin/chatUser/_id.vue' /* webpackChunkName: "pages/admin/chatUser/_id" */))
 const _325c1ac5 = () => interopDefault(import('../pages/products/_id.vue' /* webpackChunkName: "pages/products/_id" */))
+const _b8ab45f4 = () => interopDefault(import('../pages/tests/_id.vue' /* webpackChunkName: "pages/tests/_id" */))
 
 const emptyFn = () => {}
 
@@ -77,13 +82,25 @@ export const routerOptions = {
     component: _348ec9a4,
     name: "admin-addproduct"
   }, {
+    path: "/admin/addtest",
+    component: _657a9ca6,
+    name: "admin-addtest"
+  }, {
     path: "/admin/chat",
     component: _2f75294e,
     name: "admin-chat"
   }, {
+    path: "/admin/orders",
+    component: _1259ea4a,
+    name: "admin-orders"
+  }, {
     path: "/admin/productlist",
     component: _06979d07,
     name: "admin-productlist"
+  }, {
+    path: "/admin/tests",
+    component: _1bf3a49b,
+    name: "admin-tests"
   }, {
     path: "/admin/userslist",
     component: _84f0f4c0,
@@ -93,9 +110,17 @@ export const routerOptions = {
     component: _2e200f0c,
     name: "index"
   }, {
+    path: "/admin/chatUser/:id?",
+    component: _29e699e4,
+    name: "admin-chatUser-id"
+  }, {
     path: "/products/:id?",
     component: _325c1ac5,
     name: "products-id"
+  }, {
+    path: "/tests/:id?",
+    component: _b8ab45f4,
+    name: "tests-id"
   }],
 
   fallback: false

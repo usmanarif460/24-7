@@ -2,16 +2,16 @@
   <div>
     <navbar />
     <div class="pt-24 mb-8">
-      <p class="text-4xl font-bold text-center text-blue-500 animate-pulse">Product Details</p>
+      <p class="text-4xl font-bold text-center text-blue-500 animate-pulse">Test Details</p>
 
       <div class="lg-container grid grid-cols-1 gap-5 px-8 pt-6 mx-auto product-preview md:grid-cols-2">
         <div class="w-full img-section h-2/4 ">
           <img class="w-full h-full" :src="product.imageUrl">
         </div>
         <div class="h-screen p-5 product-details">
-          <h1 class="text-sm font-bold md:text-lg">{{ product.name }}</h1>
+          <h1 class="text-sm font-bold md:text-lg">{{ product.testName }}</h1>
           <p class="mb-2">{{ product.description }}</p>
-          <p class="mb-2 font-bold">{{ product.price }}</p>
+          <p class="mb-2 font-bold"> PKR : {{ product.price }}.00</p>
           <div class="flex items-center space-x-3 mb-4">
             <p class=" text-lg"> Quantity : {{ product.quantity }}</p>
             <input id="quantity" name="quantity" type="number" required
@@ -69,7 +69,7 @@ export default {
 
   }),
   async created() {
-    const doc = await this.$fire.firestore.collection('products').doc(this.$route.params.id)
+    const doc = await this.$fire.firestore.collection('tests').doc(this.$route.params.id)
       .get()
     this.product = doc.exists ? doc.data() : {}
   },
@@ -89,15 +89,6 @@ export default {
     close() {
       this.added = false
     },
-
-    decreament() {
-      if (this.product.qunatity > 0) {
-        this.product.quantity--;
-      }
-      else {
-        this.product.quantity;
-      }
-    }
   }
 };
 

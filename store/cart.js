@@ -4,6 +4,7 @@
 var cartItems = localStorage.getItem("cart_storage")
 export const state = () => ({
   cartItems: cartItems ? JSON.parse(cartItems) : [],
+  unreadMessageCount: 0,
 })
 
 // Getters Section
@@ -14,7 +15,11 @@ export const getters = {
   },
   getTotal: state => {
     return state.cartItems.reduce((total, cartItem) => total + (cartItem.quantity * cartItem.price), 0);
-  }
+  },
+
+  unreadMessageCount: state => {
+    return state.unreadMessageCount
+  },
 }
 
 // Mutations Section
@@ -46,7 +51,11 @@ export const mutations = {
   clearCart(state) {
     state.cartItems = [];
     localStorage.removeItem('cart_storage');
-  }
+  },
+
+  setUnreadMessageCount(state, count) {
+    state.unreadMessageCount = count;
+  },
 }
 
 // Actions Section
@@ -65,7 +74,12 @@ export const actions = {
     }
     localStorage.setItem("cart_storage", JSON.stringify(state.cartItems))
   },
+
   removeFromCart({ commit }, item) {
     commit('removeFromCart', item)
+  },
+
+  updateUnreadMessageCount({ commit }, count) {
+    commit('setUnreadMessageCount', count);
   },
 }

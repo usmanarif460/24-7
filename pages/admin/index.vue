@@ -54,24 +54,33 @@
               </nuxt-link>
             </li>
             <li class="rounded-sm">
-              <nuxt-link to="/admin/orders" class="flex items-center p-2 space-x-3 rounded-md hover:bg-gray-700">
-
-                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <circle cx="12" cy="12" r="9" stroke="#878787" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"></circle>
-                    <path
-                      d="M14.5 9.08333L14.3563 8.96356C13.9968 8.66403 13.5438 8.5 13.0759 8.5H10.75C9.7835 8.5 9 9.2835 9 10.25V10.25C9 11.2165 9.7835 12 10.75 12H13.25C14.2165 12 15 12.7835 15 13.75V13.75C15 14.7165 14.2165 15.5 13.25 15.5H10.412C9.8913 15.5 9.39114 15.2969 9.01782 14.934L9 14.9167"
-                      stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M12 8L12 7" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    </path>
-                    <path d="M12 17V16" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    </path>
-                  </g>
-                </svg>
-                <span>Orders</span>
+              <nuxt-link to="/admin/orders">
+                <div @click="openOrder"
+                  class="flex items-center justify-between p-2 space-x-3 rounded-md hover:bg-gray-700">
+                  <div class="flex space-x-3">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="9" stroke="#878787" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"></circle>
+                        <path
+                          d="M14.5 9.08333L14.3563 8.96356C13.9968 8.66403 13.5438 8.5 13.0759 8.5H10.75C9.7835 8.5 9 9.2835 9 10.25V10.25C9 11.2165 9.7835 12 10.75 12H13.25C14.2165 12 15 12.7835 15 13.75V13.75C15 14.7165 14.2165 15.5 13.25 15.5H10.412C9.8913 15.5 9.39114 15.2969 9.01782 14.934L9 14.9167"
+                          stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M12 8L12 7" stroke="#878787" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                        </path>
+                        <path d="M12 17V16" stroke="#878787" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round">
+                        </path>
+                      </g>
+                    </svg>
+                    <span>Orders</span>
+                  </div>
+                  <span v-if="orderCount > 0" class="bg-red-600 px-2 text-sm md:text-md rounded-full text-white"> {{
+                    orderCount
+                  }}</span>
+                </div>
               </nuxt-link>
             </li>
             <li class="rounded-sm ">
@@ -101,8 +110,9 @@
                 <span>Products</span>
               </nuxt-link>
             </li>
+
             <li class="rounded-sm">
-              <nuxt-link to="/admin/addproduct" class="flex items-center p-2 space-x-3 rounded-md hover:bg-gray-700 ">
+              <nuxt-link to="/admin/addtest" class="flex items-center p-2 space-x-3 rounded-md hover:bg-gray-700 ">
                 <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#b5b5b5">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -115,7 +125,7 @@
                   </g>
                 </svg>
 
-                <span>Add Product</span>
+                <span>Add Test</span>
               </nuxt-link>
             </li>
             <li class="rounded-sm">
@@ -146,3 +156,43 @@
 
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      modalIsOpen: false,
+      orders: [],
+      newOrders: [],
+      orderCount: 0,
+    }
+  },
+  async created() {
+    const ordersList = []
+    await this.$fire.firestore.collection('orders').get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        ordersList.push({
+          id: doc.id,
+          ...doc.data()
+        })
+      });
+      this.orders = ordersList
+      this.newOrders = this.orders.filter(order => order.newOrder);
+      // console.log(`unread messages: ${this.unreadMessages} `)
+      this.orderCount = this.newOrders.length;
+    })
+  },
+  methods: {
+    openOrder() {
+      console.log(`button clicked`)
+      this.orders.forEach(order => {
+        console.log(order)
+        this.$fire.firestore.collection('orders').doc(order.id).update({
+          newOrder: false
+        })
+        console.log(order.id)
+        this.orderCount = 0
+      });
+    },
+  }
+}
+</script>

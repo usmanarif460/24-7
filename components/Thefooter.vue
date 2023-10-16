@@ -1,10 +1,10 @@
 <template>
-  <div class=" z-50 w-full bg-white border-t-4 border-blue-500 rounded-xl">
+  <div class="fixed bottom-0 z-50 w-full bg-white border-t-4 border-blue-500 rounded-xl">
     <!-- Footer section with social media icons and newsletter sign-up -->
-    <footer class="text-center text-gray-800 ">
+    <footer class="w-11/12 mx-auto text-center text-gray-800">
       <div class="pt-2">
         <!-- Copyright information -->
-        <div class="hidden px-8 mb-2 md:block">
+        <div class="hidden px-8 mb-2 lg:block">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             distinctio earum repellat quaerat voluptatibus placeat nam,
@@ -101,11 +101,12 @@
       </div>
 
       <!-- Copyright section -->
-      <div class="p-2 text-center text-white bg-blue-500">
-        © 2023 Copyright <strong> | </strong>
-        <a class=" hover:underline" href="/"> 24-7 Pharmacy</a>
-      </div>
+
     </footer>
+    <div class="p-2 text-center text-white bg-blue-500">
+      © 2023 Copyright <strong> | </strong>
+      <a class=" hover:underline" href="/"> 24/7 Pharmacy</a>
+    </div>
   </div>
 </template>
 <style scoped>

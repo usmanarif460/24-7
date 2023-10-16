@@ -11,6 +11,9 @@
   "Headerbtn": {
     "description": "Auto imported from components/headerbtn.vue"
   },
+  "LabTest": {
+    "description": "Auto imported from components/labTest.vue"
+  },
   "Navbar": {
     "description": "Auto imported from components/navbar.vue"
   },
@@ -25,5 +28,11 @@
   },
   "TopSvg": {
     "description": "Auto imported from components/top-svg.vue"
+  },
+  "User": {
+    "description": "Auto imported from components/user.vue"
+  },
+  "Users": {
+    "description": "Auto imported from components/users.vue"
   }
 }

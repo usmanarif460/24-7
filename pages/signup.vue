@@ -15,6 +15,7 @@
 
         <div class="px-8 pt-6 pb-8 mb-16 bg-white rounded shadow-2xl">
           <form method="POST" @submit.prevent="registerUser">
+            <input type="hidden" name="remember" value="true">
             <div class="grid-cols-2 gap-8 md:grid">
               <div class="mb-8">
                 <label for="fistName" class="block mb-2 text-sm font-bold text-gray-700">
@@ -22,7 +23,7 @@
                   First Name
                 </label>
                 <div class="relative mt-1 rounded-md shadow-sm">
-                  <input name="firstName" id="firstName" type="fistName" placeholder="First Name" v-model="firstName"
+                  <input name="firstName" id="firstName" type="text" placeholder="First Name" v-model="firstName"
                     required
                     class="block w-full px-4 py-2 pr-10 mb-3 leading-tight text-gray-700 transition duration-500 ease-in-out border-2 border-blue-200 rounded shadow appearance-none focus:outline-none focus:bg-white focus:border-blue-600">
                 </div>
@@ -33,19 +34,19 @@
                   Last Name
                 </label>
                 <div class="relative mt-1 rounded-md shadow-sm">
-                  <input name="lastName" id="lastName" type="lastName" placeholder="Last Name" v-model="lastName" required
+                  <input name="lastName" id="lastName" type="text" placeholder="Last Name" v-model="lastName" required
                     class="block w-full px-4 py-2 pr-10 mb-3 leading-tight text-gray-700 transition duration-500 ease-in-out border-2 border-blue-200 rounded shadow appearance-none focus:outline-none focus:bg-white focus:border-blue-600">
                 </div>
               </div>
             </div>
             <div class="mb-8">
-              <label for="username" class="block mb-2 text-sm font-bold text-gray-700">
+              <label for="email" class="block mb-2 text-sm font-bold text-gray-700">
                 <span class="text-red-800">&nbsp;*</span>
                 Email Address ( <strong class="text-sm italic text-red-500">email is required )</strong>
               </label>
               <div class="relative mt-1 rounded-md shadow-sm">
 
-                <input id="email" type="email" v-model="email" placeholder="you@gmail.com" required
+                <input id="email" type="email" name="email" v-model="email" placeholder="you@gmail.com" required
                   class="block w-full px-4 py-2 pr-10 mb-3 leading-tight text-gray-700 transition duration-500 ease-in-out border-2 border-blue-200 rounded shadow appearance-none focus:outline-none focus:bg-white focus:border-blue-600" />
               </div>
 
@@ -73,11 +74,7 @@
                     </span>
                   </label>
                 </div>
-                <div>
-                  <a class="text-sm font-bold text-blue-700 hover:text-blue-900" href="#password-request">
-                    forgot password
-                  </a>
-                </div>
+                
               </div>
             </div>
 
@@ -91,13 +88,14 @@
             <hr>
             <div class="mt-3">
               <p class="text-sm text-center">
-                Already have an account
+                Already have an account?
                 <nuxt-link to="/login" class="pl-3 text-lg italic font-bold text-blue-500 hover:text-blue-600">
                   Login
                 </nuxt-link>
               </p>
             </div>
           </form>
+          
 
 
         </div>
@@ -127,8 +125,7 @@ export default {
             email: this.email,
             firstName: this.firstName,
             lastName: this.lastName,
-            timestamp: new Date(),
-
+            createdAt: new Date()
           })
           this.firstName = '',
             this.lastName = '',

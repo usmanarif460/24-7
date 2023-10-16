@@ -77,6 +77,13 @@
     "_name": "_348ec9a4"
   },
   {
+    "name": "admin-addtest",
+    "path": "/admin/addtest",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/addtest.vue",
+    "chunkName": "pages/admin/addtest",
+    "_name": "_657a9ca6"
+  },
+  {
     "name": "admin-chat",
     "path": "/admin/chat",
     "component": "/home/adnan/Documents/projects/24-7/pages/admin/chat.vue",
@@ -84,11 +91,25 @@
     "_name": "_2f75294e"
   },
   {
+    "name": "admin-orders",
+    "path": "/admin/orders",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/orders.vue",
+    "chunkName": "pages/admin/orders",
+    "_name": "_1259ea4a"
+  },
+  {
     "name": "admin-productlist",
     "path": "/admin/productlist",
     "component": "/home/adnan/Documents/projects/24-7/pages/admin/productlist.vue",
     "chunkName": "pages/admin/productlist",
     "_name": "_06979d07"
+  },
+  {
+    "name": "admin-tests",
+    "path": "/admin/tests",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/tests.vue",
+    "chunkName": "pages/admin/tests",
+    "_name": "_1bf3a49b"
   },
   {
     "name": "admin-userslist",
@@ -105,10 +126,24 @@
     "_name": "_2e200f0c"
   },
   {
+    "name": "admin-chatUser-id",
+    "path": "/admin/chatUser/:id?",
+    "component": "/home/adnan/Documents/projects/24-7/pages/admin/chatUser/_id.vue",
+    "chunkName": "pages/admin/chatUser/_id",
+    "_name": "_29e699e4"
+  },
+  {
     "name": "products-id",
     "path": "/products/:id?",
     "component": "/home/adnan/Documents/projects/24-7/pages/products/_id.vue",
     "chunkName": "pages/products/_id",
     "_name": "_325c1ac5"
+  },
+  {
+    "name": "tests-id",
+    "path": "/tests/:id?",
+    "component": "/home/adnan/Documents/projects/24-7/pages/tests/_id.vue",
+    "chunkName": "pages/tests/_id",
+    "_name": "_b8ab45f4"
   }
 ]
