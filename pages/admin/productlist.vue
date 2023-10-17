@@ -1,5 +1,5 @@
 <template>
-  <div class="flex mx-auto bg-gray-700">
+  <div class="h-screen mx-auto bg-gray-700 ">
     <admin-nav />
     <div class="w-full px-16 pt-16">
       <div v-if="!showEditForm" class="flex justify-center mb-2 border-2 border-gray-400 rounded">
