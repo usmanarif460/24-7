@@ -1,64 +1,64 @@
 
 <template>
-  <div class="flex bg-gray-900 h-screen">
+  <div class="h-screen bg-gray-700 ">
     <admin-nav />
-    <div class=" flex-1 py-8  px-4 sm:px-6 lg:px-8 ">
+    <div class="flex-1 px-4 py-8 sm:px-6 lg:px-8">
       <div class="px-16">
-        <div class="flex justify-center border-2 border-gray-400 mb-2 rounded">
-          <p class="text-3xl text-white font-bold p-3 ">
+        <div class="flex justify-center w-10/12 mx-auto mb-2 border-2 border-gray-400 rounded">
+          <p class="p-3 text-3xl font-bold text-white ">
             Add New Product
           </p>
         </div>
 
-        <form class="mx-auto space-y-6 p-3 mt-16 " @submit.prevent="handleSubmit">
-          <div class=" flex-wrap -mx-3 mb-6">
-            <div class="w-full  mb-4 ">
-              <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-first-name">
+        <form class="w-11/12 p-3 mx-auto mt-16 space-y-6 max-w-7xl" @submit.prevent="handleSubmit">
+          <div class="flex-wrap mb-6 -mx-3 ">
+            <div class="w-full mb-4 ">
+              <label class="block mb-2 text-xs font-bold tracking-wide text-gray-300 uppercase" for="grid-first-name">
                 Product Image
               </label>
               <input type="file" ref="fileInput" required
-                class="  text-gray-300 bg-gray-900 border border-blue-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:border-gray-500">
+                class="px-4 py-3 mb-3 leading-tight text-gray-300 bg-gray-700 border border-blue-500 rounded focus:outline-none focus:border-gray-500">
 
             </div>
-            <div class="grid grig-cols-1 md:grid-cols-2 gap-3">
+            <div class="grid gap-3 grig-cols-1 md:grid-cols-2">
               <div class="w-full mb-2">
-                <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="grid-first-name">
+                <label class="block mb-2 text-xs font-bold tracking-wide text-gray-300 uppercase" for="grid-first-name">
                   Product Name
                 </label>
                 <input
-                  class=" appearance-none block w-full  text-gray-300 bg-gray-900 border border-blue-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus  focus:border-gray-500"
+                  class="block w-full px-4 py-3 mb-3 leading-tight text-gray-300 bg-gray-700 border border-blue-500 rounded appearance-none focus:outline-none focus focus:border-gray-500"
                   required type="text" id="productName" placeholder="Enter Product Name" v-model="productName">
 
 
               </div>
               <div class="w-full">
-                <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2 ">
+                <label class="block mb-2 text-xs font-bold tracking-wide text-gray-300 uppercase ">
                   Product Price
                 </label>
                 <input id="price" name="price" type="text" required
-                  class="appearance-none block w-full bg-gray-900 text-gray-300 border border-blue-500 rounded py-3 px-4 leading-tight focus:outline-none focus  focus:border-gray-500"
+                  class="block w-full px-4 py-3 leading-tight text-gray-300 bg-gray-700 border border-blue-500 rounded appearance-none focus:outline-none focus focus:border-gray-500"
                   placeholder=" Enter Product Price" v-model="price">
               </div>
             </div>
 
             <div class="w-full mb-4 ">
-              <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2">
+              <label class="block mb-2 text-xs font-bold tracking-wide text-gray-300 uppercase">
                 Product Description
               </label>
               <textarea
-                class="appearance-none block w-full h-24 bg-gray-900 text-gray-300 border border-blue-500 rounded py-3 px-4 leading-tight focus:outline-none focus  focus:border-gray-500"
+                class="block w-full h-24 px-4 py-3 leading-tight text-gray-300 bg-gray-700 border border-blue-500 rounded appearance-none focus:outline-none focus focus:border-gray-500"
                 required type="text" id="description" placeholder="Enter Product Description"
                 v-model="description"></textarea>
             </div>
 
             <div class="flex gap-3">
               <button type="submit"
-                class="rounded-md border border-transparent bg-blue-500 py-2 px-4 text-md font-bold text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                class="px-4 py-2 font-bold text-white bg-blue-500 border border-transparent rounded-md text-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
 
                 Add Product
               </button>
               <button @click="cancelbtn" type="button"
-                class="rounded-md border border-transparent bg-gray-300 py-2 px-4 text-md font-bold text-blue-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                class="px-4 py-2 font-bold text-blue-700 bg-gray-300 border border-transparent rounded-md text-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
 
                 Cancel
               </button>
@@ -107,8 +107,8 @@ export default {
             this.price = 0,
             this.$refs.fileInput.files = null,
             this.$router.push('/medicines')
-          })
-          .catch(error => {
+        })
+        .catch(error => {
           console.error(error)
           alert('Error adding product')
         })
@@ -116,9 +116,9 @@ export default {
     },
     cancelbtn() {
       this.productName = '',
-      this.description = '',
-      this.price = 0,
-      this.$refs.fileInput.files = null
+        this.description = '',
+        this.price = 0,
+        this.$refs.fileInput.files = null
       this.$router.push('/admin/productlist')
     }
   }
