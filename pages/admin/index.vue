@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-gray-900 ">
-    <div class=" flex flex-col p-3 w-60 h-screen bg-gray-900 dark:text-gray-100 border-r-2 border-gray-500">
+  <div class="bg-gray-700 ">
+    <div class="flex flex-col h-screen p-3 bg-gray-700 border-r-2 border-gray-500  w-60 dark:text-gray-100">
       <div class="space-y-3">
-        <div class="flex items-center justify-between border-b-2 border-gray-500 py-3">
+        <div class="flex items-center justify-between py-3 border-b-2 border-gray-500">
           <a href="/admin">Dashboard</a>
           <button class="">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-7 h-7 fill-current dark:text-gray-100">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current w-7 h-7 dark:text-gray-100">
               <rect width="352" height="32" x="80" y="96"></rect>
               <rect width="352" height="32" x="80" y="240"></rect>
               <rect width="352" height="32" x="80" y="384"></rect>
@@ -23,11 +23,11 @@
             </button>
           </span>
           <input type="search" name="Search" placeholder="Search..."
-            class="w-full py-2 pl-10 text-md dark:border-transparent rounded-md focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-900 ">
+            class="w-full py-2 pl-10 rounded-md text-md dark:border-transparent focus:outline-none dark:bg-gray-800 dark:text-gray-100 focus:dark:bg-gray-700 ">
         </div>
         <div class="flex-1">
-          <ul class="pt-2 pb-4 space-y-4 text-sm border-y-2 border-gray-500">
-            <li class="rounded-sm  ">
+          <ul class="pt-2 pb-4 space-y-4 text-sm border-gray-500 border-y-2">
+            <li class="rounded-sm ">
               <nuxt-link to="/" class="flex items-center p-2 space-x-3 rounded-md hover:bg-gray-700">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                   class="w-5 h-5 fill-current dark:text-gray-400">
@@ -77,7 +77,7 @@
                     </svg>
                     <span>Orders</span>
                   </div>
-                  <span v-if="orderCount > 0" class="bg-red-600 px-2 text-sm md:text-md rounded-full text-white"> {{
+                  <span v-if="orderCount > 0" class="px-2 text-sm text-white bg-red-600 rounded-full md:text-md"> {{
                     orderCount
                   }}</span>
                 </div>
@@ -97,7 +97,7 @@
             <li class="rounded-sm">
               <nuxt-link to="/admin/productlist" href="#"
                 class="flex items-center p-2 space-x-3 rounded-md hover:bg-gray-700">
-                <svg viewBox="0 0 1024 1024" fill="#b5b5b5" class=" w-5 h-5" version="1.1"
+                <svg viewBox="0 0 1024 1024" fill="#b5b5b5" class="w-5 h-5 " version="1.1"
                   xmlns="http://www.w3.org/2000/svg" stroke="#b5b5b5">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -113,7 +113,7 @@
 
             <li class="rounded-sm">
               <nuxt-link to="/admin/addtest" class="flex items-center p-2 space-x-3 rounded-md hover:bg-gray-700 ">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#b5b5b5">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#b5b5b5">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                   <g id="SVGRepo_iconCarrier">
